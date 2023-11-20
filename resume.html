@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Shah Mohammad Fahim</title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">SHAH MOHAMMAD FAHIM</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Shah Mohammad Fahim</h1>
+<h3 class="subtitle">Resume</h3>
+
+</div>
+
+
+<p><img src="images/fahim.png" style="width:25%"></p>
+<p><strong>A. Personal Statement</strong></p>
+<p>I am a physician with training and experience in nutrition,
+epidemiology, and infectious diseases. I am a doctoral trainee in the
+Division of Nutritional Sciences at Cornell University. Before coming to
+Cornell, I worked in the Nutrition and Clinical Services Division at the
+International Centre for Diarrhoeal Disease Research, Bangladesh
+(icddr,b). During my stint as icddr,b, I led and supported several
+research projects on nutrition, enteric infections, and intestinal
+inflammation in different population subsets including infants,
+children, and adults. Currently, I am involved in randomized clinical
+trials focusing on nutritional interventions in children and women of
+reproductive age living in high-burden settings. Our team is working to
+leverage data from these trials to develop non-invasive, cheap, and
+easy-to-administer biomarkers for the assessment of nutritional
+impairments and inflammatory changes in diverse populations. We are also
+working to investigate the effect of diet-based approaches on the
+biomarker and gut microbiome profiles in children and reproductive-age
+women living in resource-poor settings.</p>
+<p><img src="images/cornell.jpeg" style="width:100%"></p>
+<p><strong>B. Positions, Scientific Appointments and Honors</strong></p>
+<p><strong>Positions and Scientific Appointments</strong></p>
+<p>2023 - Associate Scientist, International Centre for Diarrhoeal
+Disease Research, Bangladesh (icddr,b)</p>
+<p>2022 - Graduate Teaching Assistant, Cornell University, Division of
+Nutritional Sciences, Ithaca, NY</p>
+<p>2021 - 2022 Assistant Scientist, International Centre for Diarrhoeal
+Disease Research, Bangladesh (icddr,b)</p>
+<p>2019 - 2020 Research Investigator, International Centre for
+Diarrhoeal Disease Research, Bangladesh (icddr,b)</p>
+<p>2018 - 2019 Study Physician, International Centre for Diarrhoeal
+Disease Researech, Bangladesh (icddr,b)</p>
+<p>2016 - 2018 Research Fellow, International Centre for Diarrhoeal
+Disease Research, Bangladesh (icddr,b)</p>
+<p><strong>Honors</strong></p>
+<p>2020 Young Scientist Award, International Centre for Diarrhoeal
+Disease Research, Bangladesh (icddr,b), Dhaka, BD</p>
+<p>2018 Dr. Asma Islam Memorial Award, International Centre for
+Diarrhoeal Disease Research, Bangladesh (icddr,b), Dhaka, BD</p>
+<p>2018 Summa-Cum-Laude, American International University-Bangladesh,
+Dhaka, BD</p>
+<p><strong>C. Scientific Contributions</strong></p>
+<p><strong>1. Nutrition, immune function, infection, and inflammation in
+the context of Maternal and Child Health: My work in this area is
+focused on the biological interplay between nutrition, infection, and
+inflammation, particularly in children and women of reproductive age. My
+recent works are focused on elucidating the pathogenesis of
+environmental enteric dysfunction (EED) and determining the consequences
+of this sub-clinical disorder during the early years of life. I am also
+involved in projects with the goal of assessing non-invasive biomarkers
+of EED in low-income settings.</strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Fahim SM, Alam M, Alam J, Gazi M, Mahfuz M, Ahmed T. Inadequate
+Vitamin C Intake and Intestinal Inflammation Are Associated with
+Multiple Micronutrient Deficiency in Young Children: Results from a
+Multi-Country Birth Cohort Study. Nutrients. 2022 March 28; 14(7):1408-.
+Available from: <a href="https://www.mdpi.com/2072-6643/14/7/1408"
+class="uri">https://www.mdpi.com/2072-6643/14/7/1408</a> DOI:
+10.3390/nu14071408</p></li>
+<li><p>Fahim SM, Das S, Gazi M, Alam M, Hasan M, Hossain M, Mahfuz M,
+Rahman M, Haque R, Sarker S, Mazumder R, Ahmed T. Helicobacter pylori
+infection is associated with fecal biomarkers of environmental enteric
+dysfunction but not with the nutritional status of children living in
+Bangladesh. PLOS Neglected Tropical Diseases. 2020; 14(4):e0008243-.
+Available from: <a
+href="https://dx.plos.org/10.1371/journal.pntd.0008243"
+class="uri">https://dx.plos.org/10.1371/journal.pntd.0008243</a> DOI:
+10.1371/journal.pntd.0008243</p></li>
+<li><p>Fahim SM, Das S, Gazi M, Alam M, Mahfuz M, Ahmed T. Evidence of
+gut enteropathy and factors associated with undernutrition among
+slum-dwelling adults in Bangladesh. The American Journal of Clinical
+Nutrition. 2020 March; 111(3):657-666. Available from: <a
+href="https://academic.oup.com/ajcn/article/111/3/657/5698012"
+class="uri">https://academic.oup.com/ajcn/article/111/3/657/5698012</a>
+DOI: 10.1093/ajcn/nqz327</p></li>
+<li><p>Fahim SM, Das S, Gazi MA, Mahfuz M, Ahmed T. Association of
+intestinal pathogens with faecal markers of environmental enteric
+dysfunction among slum-dwelling children in the first 2 years of life in
+Bangladesh. Trop Med Int Health. 2018 Nov;23(11):1242-1250. PubMed
+Central PMCID: PMC6282798.</p></li>
+</ol>
+<p><strong>2. Nutritional Status, the Gut Microbiome, and Diet-based
+Approaches to Improve Gut Microbial Dysbiosis: My prior and present
+works are focused on elucidating the role of nutrition-infection
+interactions on gut microbial dysbiosis. I am also involved in projects
+aimed at identifying if and to what extent diet can be used to modify
+the gut microbiome to optimize population health.</strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Mostafa I, Fahim SM, Das S, Gazi M, Hasan M, Saqeeb K, Mahfuz M,
+Lynn H, Barratt M, Gordon J, Ahmed T. Developing shelf-stable Microbiota
+Directed Complementary Food (MDCF) prototypes for malnourished children:
+study protocol for a randomized, single-blinded, clinical study. BMC
+Pediatrics. 2022 July 01; 22(1):-. Available from: <a
+href="https://bmcpediatr.biomedcentral.com/articles/10.1186/s12887-022-03436-6"
+class="uri">https://bmcpediatr.biomedcentral.com/articles/10.1186/s12887-022-03436-6</a>
+DOI: 10.1186/s12887-022-03436-6</p></li>
+<li><p>Chen R, Kung V, Das S, Hossain MS, Hibberd M, Guruge J, Mahfuz M,
+Begum S, Rahman MM, Fahim SM, Gazi M, Haque R, Sarker S, Mazumder R, Di
+Luccia B, Ahsan K, Kennedy E, Santiago-Borges J, Rodionov D, Leyn S,
+Osterman A, Barratt M, Ahmed T, Gordon J. Duodenal Microbiota in Stunted
+Undernourished Children with Enteropathy. New England Journal of
+Medicine. 2020 July 23; 383(4):321-333. Available from: <a
+href="http://www.nejm.org/doi/10.1056/NEJMoa1916004"
+class="uri">http://www.nejm.org/doi/10.1056/NEJMoa1916004</a> DOI:
+10.1056/NEJMoa1916004</p></li>
+</ol>
+<p><strong>3. Biomarkers for Nutrition, Infection, and Inflammation
+Assessment: I am working with Dr. Saurabh Mehta to assess the diagnostic
+performance and feasibility of using salivary biomarkers to measure
+nutritional status. This work will enable early screening and detection
+of nutritional impairments and associated inflammatory changes in
+community settings in the US and abroad.</strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Fahim SM, Gazi MA, Alam MA, Hasan MM, Das S, Mahfuz M, Ahmed T.
+Association between Circulating Retinol Binding Protein 4, Body Mass
+Index, and Biomarkers of Environmental Enteric Dysfunction among
+Slum-Dwelling Lean Adults in Bangladesh. Am J Trop Med Hyg. 2022 Dec
+14;107(6):1315-1322. PubMed Central PMCID: PMC9768260.</p></li>
+<li><p>Hasan MM, Fahim SM, Das S, Gazi MA, Mahfuz M, Ahmed T.
+Association of plasma low-density lipoprotein receptor-related protein-1
+(LRP1) with undernutrition: a case-control study in Bangladeshi adults.
+Biomarkers. 2021 Nov;26(7):625-631. PubMed PMID: 34433325.</p></li>
+</ol>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
