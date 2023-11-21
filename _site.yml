@@ -1,0 +1,22 @@
+name: "Homepage"
+output_dir: "."
+navbar:
+  title: "Shah Mohammad Fahim"
+  type: inverse
+  left:
+    - text: "Home"
+      href: https://shahmdfahim.github.io/index.html                  
+    - text: "Resume"
+      href: https://shahmdfahim.github.io/resume.html  
+    - text: "Papers"
+      href: http://www.shahmdfahim.io/papers.html  
+    - text: "Books"
+      href: https://shahmdfahim.github.io/books.html  
+    - text: "Stat with SHAH"
+      href: https://shahmdfahim.github.io/stat.html  
+    - text: "Contact"
+      href: https://shahmdfahim.github.io/contact.html  
+output:
+  html_document:
+    theme: readable
+    highlight: textmate
