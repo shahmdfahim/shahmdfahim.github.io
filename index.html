@@ -1,343 +1,355 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-
-<head>
-
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-
-
-
-<title>Homepage</title>
-
-<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
-
-
-
-
-
-
-
-
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
-
-
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
-
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
-  font-family: 'Source Sans Pro', sans-serif;
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Source Sans Pro', sans-serif;
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<!-- code folding -->
-
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
-
-
-
-<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Shah Mohammad Fahim</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">Home</a>
-</li>
-<li>
-  <a href="resume.html">Resume</a>
-</li>
-<li>
-  <a href="papers.html">Papers</a>
-</li>
-<li>
-  <a href="books.html">Books</a>
-</li>
-<li>
-  <a href="stat.html">Stat with SHAH</a>
-</li>
-<li>
-  <a href="contact.html">Contact</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div id="header">
-
-
-
-<h3 class="title toc-ignore">Homepage</h3>
-
-</div>
-
-
-<p><img src="./images/fahim2.jpg" style="width:50%"></p>
-<p>Shah Mohammad Fahim is a physician turned nutrition scientist with
-training in epidemiology and data science. He is the author of the book
-<a href="https://adarsha.com.bd/kolpo-doctor/">কল্প-ডাক্তার</a>.</p>
-<p>Fahim is an Associate Scientist at the International Centre for
-Diarrhoeal Disease Research, Bangladesh (icddr,b), and is pursuing his
-PhD at Cornell University, USA.</p>
-<p>He has published articles in The American Journal of Clinical
-Nutrition, The Journal of Infectious Diseases, The American Journal of
-Tropical Medicine and Hygiene, PLoS Neglected Tropical Diseases, Public
-Health Nutrition, and The New England Journal of Medicine.</p>
-<p>He lives in Ithaca, New York with his wife.</p>
-<p>
- 
-</p>
-<p>© Shah Mohammad Fahim</p>
-
-
-
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
-  });
-});
-</script>
-
-<!-- code folding -->
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
+	<head>
+		<title>Prologue by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Single Line Title</title>
+		<style>
+			#logo {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+			}
+			#title {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<!-- <div id="logo">
+							<span class="image avatar48"><img src="images/fahim.png" alt="" /></span>
+							<h1 id="title">Shah Mohammad Fahim</h1>
+							<p></p>
+						</div> -->
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Resume</span></a></li>
+								<li><a href="#publications" id="publication-links"><span class="icon solid fa-file-alt">Publications</span></a></li>
+								<li><a href="#books" id="books-link"><span class="icon solid fa-book">Books</span></a></li>
+								<li><a href="#statwithshah" id="statwithshah-link"><span class="icon solid fa-chart-bar">Stat with Shah</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://facebook.com/shahmdfahim" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://instagram.com/shahmdfahim" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://twitter.com/shahmdfahim" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.linkedin.com/in/shahmdfahim" class="icon brands fa-linkedin-in"><span class="label">LinkdIn</span></a></li>
+							<li><a href="https://github.com/shahmdfahim" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="fahim.ccc@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one">
+						<div class="container">
+
+							<header>
+								<p>Shah Mohammad Fahim is a physician turned nutrition scientist with training in epidemiology and data science. He is the author of the book <a href="https://adarsha.com.bd/kolpo-doctor/" rel="noopener noreferrer" target="_blank">কল্প-ডাক্তার.</a>. </p>
+
+								<p>Fahim is an Associate Scientist at the International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b), and is pursuing his PhD at Cornell University, USA.</p>
+									
+								<p>He has published articles in The American Journal of Clinical Nutrition, The Journal of Infectious Diseases, The American Journal of Tropical Medicine and Hygiene, PLoS Neglected Tropical Diseases, Public Health Nutrition, and The New England Journal of Medicine.</p>
+									
+								<p>He lives in Ithaca, New York with his wife.</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly"> Learn more</a>
+							</footer>
+
+						</div>
+					</section>
+				
+				<!-- About Me -->
+				<section id="about" class="two">
+					<div class="container">
+
+						<header>
+							<h2>About Me</h2>
+						</header>
+
+						<a href="#" class="image featured"><img src="images/fahim2.jpg" alt="" /></a>
+
+						<p>I am a physician with training and experience in nutrition, epidemiology, and infectious diseases. I am a doctoral trainee in the Division of Nutritional Sciences at Cornell University. Before coming to Cornell, I worked in the Nutrition and Clinical Services Division at the International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b). During my stint as icddr,b, I led and supported several research projects on nutrition, enteric infections, and intestinal inflammation in different population subsets including infants, children, and adults. Currently, I am involved in randomized clinical trials focusing on nutritional interventions in children and women of reproductive age living in high-burden settings. Our team is working to leverage data from these trials to develop non-invasive, cheap, and easy-to-administer biomarkers for the assessment of nutritional impairments and inflammatory changes in diverse populations. We are also working to investigate the effect of diet-based approaches on the biomarker and gut microbiome profiles in children and reproductive-age women living in resource-poor settings.
+						</p>
+
+					</div>
+				</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="three">
+						<div class="container">
+					
+							<!-- Additional Sections -->
+							<header>
+								<h2>Positions, Scientific Appointments </h2>
+							</header>
+							<ul>
+								<li>2023 - Associate Scientist, International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b)</li>
+								<li>2022 - Graduate Teaching Assistant, Cornell University, Division of Nutritional Sciences, Ithaca, NY</li>
+								<li>2021 - 2022 Assistant Scientist, International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b)</li>
+								<li>2019 - 2020 Research Investigator, International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b)</li>
+								<li>2018 - 2019 Study Physician, International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b)</li>
+								<li>2016 - 2018 Research Fellow, International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b)</li>
+							</ul>
+					
+							<header>
+								<h2>Honors </h2>
+							</header>
+							<ul>
+								<li>2020 Young Scientist Award, International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b), Dhaka, BD</li>
+								<li>2018 Dr. Asma Islam Memorial Award, International Centre for Diarrhoeal Disease Research, Bangladesh (icddr,b), Dhaka, BD</li>
+								<li>2018 Summa-Cum-Laude, American International University-Bangladesh, Dhaka, BD</li>
+							</ul>
+					
+							<header>
+								<h2>Scientific Contributions</h2>
+							</header>
+							<p style="margin: 0 auto;text-align: left;">1. Nutrition, immune function, infection, and inflammation in the context of Maternal and Child Health: My work in this area is
+								focused on the biological interplay between nutrition, infection, and
+								inflammation, particularly in children and women of reproductive age. My
+								recent works are focused on elucidating the pathogenesis of
+								environmental enteric dysfunction (EED) and determining the consequences
+								of this sub-clinical disorder during the early years of life. I am also
+								involved in projects with the goal of assessing non-invasive biomarkers
+								of EED in low-income settings.
+							</p>
+
+								<ul>
+									<li><p>Fahim SM, Alam M, Alam J, Gazi M, Mahfuz M, Ahmed T. Inadequate
+									Vitamin C Intake and Intestinal Inflammation Are Associated with
+									Multiple Micronutrient Deficiency in Young Children: Results from a
+									Multi-Country Birth Cohort Study. Nutrients. 2022 March 28; 14(7):1408-.
+									Available from: <a href="https://www.mdpi.com/2072-6643/14/7/1408"
+									class="uri">https://www.mdpi.com/2072-6643/14/7/1408</a> DOI:
+									10.3390/nu14071408</p></li>
+									<li><p>Fahim SM, Das S, Gazi M, Alam M, Hasan M, Hossain M, Mahfuz M,
+									Rahman M, Haque R, Sarker S, Mazumder R, Ahmed T. Helicobacter pylori
+									infection is associated with fecal biomarkers of environmental enteric
+									dysfunction but not with the nutritional status of children living in
+									Bangladesh. PLOS Neglected Tropical Diseases. 2020; 14(4):e0008243-.
+									Available from: <a
+									href="https://dx.plos.org/10.1371/journal.pntd.0008243"
+									class="uri">https://dx.plos.org/10.1371/journal.pntd.0008243</a> DOI:
+									10.1371/journal.pntd.0008243</p></li>
+									<li><p>Fahim SM, Das S, Gazi M, Alam M, Mahfuz M, Ahmed T. Evidence of
+									gut enteropathy and factors associated with undernutrition among
+									slum-dwelling adults in Bangladesh. The American Journal of Clinical
+									Nutrition. 2020 March; 111(3):657-666. Available from: <a
+									href="https://academic.oup.com/ajcn/article/111/3/657/5698012"
+									class="uri">https://academic.oup.com/ajcn/article/111/3/657/5698012</a>
+									DOI: 10.1093/ajcn/nqz327</p></li>
+									<li><p>Fahim SM, Das S, Gazi MA, Mahfuz M, Ahmed T. Association of
+									intestinal pathogens with faecal markers of environmental enteric
+									dysfunction among slum-dwelling children in the first 2 years of life in
+									Bangladesh. Trop Med Int Health. 2018 Nov;23(11):1242-1250. PubMed
+									Central PMCID: PMC6282798.</p></li>
+								</ul>
+
+							<p style="margin: 0 auto;text-align: left;">2. Nutritional Status, the Gut Microbiome, and Diet-based
+							Approaches to Improve Gut Microbial Dysbiosis: My prior and present
+							works are focused on elucidating the role of nutrition-infection
+							interactions on gut microbial dysbiosis. I am also involved in projects
+							aimed at identifying if and to what extent diet can be used to modify
+							the gut microbiome to optimize population health.</p>
+
+							<ul>
+								<li><p>Mostafa I, Fahim SM, Das S, Gazi M, Hasan M, Saqeeb K, Mahfuz M,
+								Lynn H, Barratt M, Gordon J, Ahmed T. Developing shelf-stable Microbiota
+								Directed Complementary Food (MDCF) prototypes for malnourished children:
+								study protocol for a randomized, single-blinded, clinical study. BMC
+								Pediatrics. 2022 July 01; 22(1):-. Available from: <a
+								href="https://bmcpediatr.biomedcentral.com/articles/10.1186/s12887-022-03436-6"
+								class="uri">https://bmcpediatr.biomedcentral.com/articles/10.1186/s12887-022-03436-6</a>
+								DOI: 10.1186/s12887-022-03436-6</p></li>
+								<li><p>Chen R, Kung V, Das S, Hossain MS, Hibberd M, Guruge J, Mahfuz M,
+								Begum S, Rahman MM, Fahim SM, Gazi M, Haque R, Sarker S, Mazumder R, Di
+								Luccia B, Ahsan K, Kennedy E, Santiago-Borges J, Rodionov D, Leyn S,
+								Osterman A, Barratt M, Ahmed T, Gordon J. Duodenal Microbiota in Stunted
+								Undernourished Children with Enteropathy. New England Journal of
+								Medicine. 2020 July 23; 383(4):321-333. Available from: <a
+								href="http://www.nejm.org/doi/10.1056/NEJMoa1916004"
+								class="uri">http://www.nejm.org/doi/10.1056/NEJMoa1916004</a> DOI:
+								10.1056/NEJMoa1916004</p></li>
+							</ul>
+							<p style="margin: 0 auto;text-align: left;">3. Biomarkers for Nutrition, Infection, and Inflammation
+								Assessment: I am working with Dr. Saurabh Mehta to assess the diagnostic
+								performance and feasibility of using salivary biomarkers to measure
+								nutritional status. This work will enable early screening and detection
+								of nutritional impairments and associated inflammatory changes in
+								community settings in the US and abroad.</p>
+							<ul>
+								<li><p>Fahim SM, Gazi MA, Alam MA, Hasan MM, Das S, Mahfuz M, Ahmed T.
+									Association between Circulating Retinol Binding Protein 4, Body Mass
+									Index, and Biomarkers of Environmental Enteric Dysfunction among
+									Slum-Dwelling Lean Adults in Bangladesh. Am J Trop Med Hyg. 2022 Dec
+									14;107(6):1315-1322. PubMed Central PMCID: PMC9768260.</p></li>
+									<li><p>Hasan MM, Fahim SM, Das S, Gazi MA, Mahfuz M, Ahmed T.
+									Association of plasma low-density lipoprotein receptor-related protein-1
+									(LRP1) with undernutrition: a case-control study in Bangladeshi adults.
+									Biomarkers. 2021 Nov;26(7):625-631. PubMed PMID: 34433325.</p></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Publications -->
+				<section id="publications" class="four">
+					<div class="container">
+						<header>
+							<h2>Publications</h2>
+						</header>
+						<div class="publication-links">
+							<ul class="icons">
+								<li><a href="https://scholar.google.com/citations?user=VllJXakAAAAJ&hl=en" class="icon brands fa-google" title="Google Scholar"><span class="label">Google Scholar</span></a></li>
+								<li><a href="https://www.researchgate.net/profile/Shah-Fahim" class="icon brands fa-researchgate" title="ResearchGate"><span class="label">ResearchGate</span></a></li>
+								<li><a href="https://orcid.org/my-orcid?orcid=0000-0002-3627-202X" class="icon brands fa-orcid" title="ORCID"><span class="label">ORCID</span></a></li>
+								<li><a href="https://www.ncbi.nlm.nih.gov/myncbi/shah.mohammad.fahim.1/bibliography/public/" class="icon solid fa-book-medical" title="PubMed"><span class="label">PubMed</span></a></li>
+								<li><a href="https://sciprofiles.com/profile/shahmdfahim" class="icon solid fa-user-md" title="SciProfiles"><span class="label">SciProfiles</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- Books -->
+				<section id="books" class="five">
+					<div class="container">
+
+						<header>
+							<h1 class="title toc-ignore">কল্প-ডাক্তার</h1>
+							<h3 class="subtitle">বাংলা সাহিত্যের চিকিৎসক চরিত্র ও উপনিবেশ-পরবর্তী
+							জনস্বাস্থ্য</h3>
+						</header>
+
+						<a href="#" class="image featured"><img src="images/kolpo.jpg" alt="" /></a>
+
+						<footer class="order-now-links">
+							<p><a href="https://adarsha.com.bd/kolpo-doctor/" class="interactive-link">
+								Order Now on Adarsha <span class="arrow">&rarr;</span>
+							</a></p>
+							<p><a href="https://www.rokomari.com/book/227312/kolpo-doctor" class="interactive-link">
+								Order Now on Rokomari <span class="arrow">&rarr;</span>
+							</a></p>
+						</footer>
+								  
+						<p>উপনিবেশ-পরবর্তী সময়ে চিকিৎসকের মনস্তত্ত্ব ও জনস্বাস্থ্য ব্যবস্থার উপর
+						উপনিবেশের কী প্রভাব রয়ে গেছে তা নিয়ে আমাদের এখানে খুব বেশি কাজ হয় নাই। তবে
+						উপনিবেশকালে প্রতিষ্ঠিত স্বাস্থ্য ব্যবস্থার মধ্য দিয়ে গড়ে উঠা চিকিৎসক ও
+						হাসপাতালের হাল-হকিকত রূপায়িত হয়েছে বাংলা সাহিত্যের পাতায়। তেমন কিছু গল্প ও
+						উপন্যাস ব্যবচ্ছেদ করে কল্প-ডাক্তার বইয়ের লেখাগুলো তৈয়ার করা হয়েছে। তবে আলোচ্য
+						গল্প বা উপন্যাসের সাহিত্যমূল্য বিচার করা লেখকের লক্ষ্য নয়। বরং তার বাসনা হচ্ছে
+						বাংলা সাহিত্যের ডাক্তার চরিত্র ও হাসপাতাল ব্যবস্থার সমাজনৈতিক ও মনস্তাত্ত্বিক
+						বিশ্লেষণ। আর তাই এই বইয়ের মূল উপজীব্য - বাংলা সাহিত্যের চিকিৎসক চরিত্র ও
+						উপনিবেশ-পরবর্তী জনস্বাস্থ্য।</p>
+
+					</div>
+				</section>
+
+
+				<!-- State with shah -->
+				<section id="statwithshah" class="six">
+					<div class="container">
+
+						<header>
+							<h2>Statistics and Machine Learning Menstorship</h2>
+						</header>
+
+						<div class="publication-links">
+							<ul class="icons">
+								<li><a href="https://youtube.com/@statwithshah" class="icon brands fa-youtube" title="Youtube"><span class="label">Youtube</span></a></li>
+								<li><a href="https://facebook.com/statwithshah " class="icon brands fa-facebook-f" title="Facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://instagram.com/statwithshah" class="icon brands fa-instagram" title="Instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://threads.net/@statwithshah" class="icon solid fa-hastag" title="Thread"><span class="label">Thread</span></a></li>
+							</ul>
+						</div>
+
+					</div>
+				</section>
+
+				<!-- Contact -->
+					<!-- <section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Elementum sem parturient nulla quam placerat viverra
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section> -->
+				
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
