@@ -2068,6 +2068,59 @@ li {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+		.icons .custom {
+			margin: 0 5px; /* Add some horizontal spacing between icons */
+			color: inherit; /* Inherit the text color */
+			transition: color 0.3s ease; /* Smooth transition for color changes */
+		}
+		
+		.icon.custom {
+			width: 15px; /* Adjust width if the icon appears too small or large */
+			height: 10px; /* Adjust height if the icon appears too small or large */
+			display: inline-flex; /* Use flexbox to center the image */
+			justify-content: center; /* Center horizontally */
+			align-items: center; /* Center vertically */
+			transform: translateY(2px); /* Slightly adjust the vertical position */
+		}
+		
+		.icon.custom img {
+			width: 100%; /* Use the full width of the container */
+			height: auto; /* Maintain aspect ratio */
+			transition: filter 0.3s ease; /* Smooth transition for filters */
+			filter: grayscale(100%); /* Make the icon grayscale initially */
+		}
+		
+		.icon.custom:hover img {
+			filter: none; /* Remove all filters on hover */
+			filter: invert(1); /* Invert colors */
+		}
+
+		.icons .publication-custom {
+			margin: 0 5px; /* Add some horizontal spacing between icons */
+			color: inherit; /* Inherit the text color */
+			transition: color 0.3s ease; /* Smooth transition for color changes */
+		}
+		
+		.icon.publication-custom {
+			width: 20px; /* Use CSS variable for width */
+			height: 2px; /* Use CSS variable for height */
+			display: inline-flex; /* Use flexbox to center the image */
+			justify-content: center; /* Center horizontally */
+			align-items: center; /* Center vertically */
+			transform: translateY(2px); /* Slightly adjust the vertical position */
+		}
+		
+		.icon.publication-custom img {
+			width: 100%; /* Use the full width of the container */
+			height: auto; /* Maintain aspect ratio */
+			transition: filter 0.3s ease; /* Smooth transition for filters */
+			filter: grayscale(100%); /* Make the icon grayscale initially */
+		}
+		
+		.icon.publication-custom:hover img {
+			filter: grayscale(0%) sepia(1) hue-rotate(-50deg) saturate(10) brightness(0.9); /* Approximate color on hover */
+		}
+		
 /* Header */
 
 	#header {
