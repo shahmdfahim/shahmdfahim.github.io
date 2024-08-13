@@ -86,6 +86,43 @@ li {
     margin-bottom: 10px;  /* Space between list items */
 }
 
+.blog-card {
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card .image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blog-card h3 {
+    font-size: 1.25em;
+    margin-top: 15px;
+    color: #333;
+}
+
+.blog-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.blog-card .button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px
+}
 .publication-links ul.icons {
     padding: 0;
     list-style: none;
